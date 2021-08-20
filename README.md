@@ -123,7 +123,7 @@
 
 1. I mainly had two tasks. Prediction and Forecasting.
 
-2. For Forecasting I can use every AI models, but since I cannot use sequential AI model for Prediction tasks, the available models for it is very limited.
+2. For Forecasting I can use variety of AI models, but since I cannot use sequential AI model for Prediction tasks, the available models for it is very limited.
 
 ### 2.1 Acessing the Data
 
@@ -144,4 +144,29 @@
 
 2. If the task were forecasting I did not shuffled the data.
 
-3. 
+3. The test size is 0.15 which is built from daily number of confirmed coronavirus cases from 2021/5/5 to 2021/08/03 which contains peroid of 4th Pandemic of COVID_19 in south korea.
+
+> An example
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130186053-f9233195-cbb4-450e-b830-dc7019a87dee.png)
+
+### 2.3 Pre-processing data
+
+#### 2.3.1 Prediction task
+
+
+#### 2.3.2 Forecasting task
+
+
+
+> An example
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130187386-09bf91a3-c8e9-40e6-bfe1-2b85c5bec0ed.png)
+
+
+### 2.4 Training variety of AI models
+
+#### 2.4.1 Prediction task
+
+
+#### 2.4.2 Forecasting task
