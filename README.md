@@ -84,16 +84,16 @@
 
 
 3. I then bounded the number of confirmed coronavirus cases per day, crawled keyword scores, and symbol for whether the day is not a legal holiday(0 if it is, 1 if not) and made it into a set.
-(The reason why the last data was not one-hot-encoded is that the daily number of coronavirus 19 patients is usually larger than the legal holiday on non-legal days, so it is expressed as a number greater than zero to reflect the weight of input in artificial intelligence.)
 
 
 > An example
 >
 > ![image](https://user-images.githubusercontent.com/50206883/130180577-98bd5969-942e-4f10-9e7e-b26ee7d76e58.png)
 
+4. The reason why the last data was not one-hot-encoded is that the daily number of coronavirus 19 patients is usually larger than the legal holiday on non-legal days, so it is expressed as a number greater than zero to reflect the weight of input in artificial intelligence.
 
 
-4. I used seven consecutive bundles of these data as an input.
+5. I used seven consecutive bundles of these data as an input.
 
 > An example of an input
 >
