@@ -189,3 +189,10 @@
 1. I used 14 A.I.s for the Forecasting task and defined functions for building each model.
 
 2. I designed the function to be able to pass parameters to apply hyperparameters that I pass when I use Random Search CV.
+
+>ANN with no hidden layers
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130196385-a26959f1-e27a-414e-821b-bf82c44b2a9e.png)
+> ANN with one hidden layers
+>
+>
