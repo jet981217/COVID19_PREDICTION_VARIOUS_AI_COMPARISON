@@ -157,7 +157,21 @@
 
 #### 2.3.2 Forecasting task
 
+1. I used MaxAbsScaler as a scaler, which can reflect negative numbers very well, because there is a lot of negative data that is processed by crawl.
 
+2. I used Random Search CV to find the parameters of the deep learning model, and I did not preprocess train data because I took scalar based on the training data that excludes the Validation data that changes every time in the pipeline of Random Search CV.
+
+3. When all the Random Search CV processes were terminated and the optimal hyperparameter found by the Random Search CV had to be fit into the new model, the data used at this time had to be scalarized in advance because the pipeline did not exist.
+
+4. The data used in this case was allocated separately as train_input_forlast.
+
+5. Since sequential models receive only three-dimensional data as inputs, and ANN and DNN receive two-dimensional inputs, inputs for ANN and DNN are separated from train_input_forlast and assigned separately as train_input_forlast_ANN.
+
+6. Targets used in sequential models do not require the process of converting arrays into three dimensions, so sequential models and ANN/DNN models can use the same format of arrays, but I have nonetheless assigned '_ANN' at the end for code consistency.
+
+7. When using sequential models, I also pre-processed the train target to solve the problem that the target's scale does not match the scale of input's daily corona 19 confirmed cases data.
+
+8. The test data was also preprocessed using a scalar from train through the same process as the train data.
 
 > An example
 >
