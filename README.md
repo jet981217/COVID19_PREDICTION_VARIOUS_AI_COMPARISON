@@ -83,3 +83,65 @@
 
 
 
+3. I then bounded the number of confirmed coronavirus cases per day, crawled keyword scores, and symbol for whether the day is not a legal holiday(0 if it is, 1 if not) and made it into a set.
+(The reason why the last data was not one-hot-encoded is that the daily number of coronavirus 19 patients is usually larger than the legal holiday on non-legal days, so it is expressed as a number greater than zero to reflect the weight of input in artificial intelligence.)
+
+
+> An example
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130180577-98bd5969-942e-4f10-9e7e-b26ee7d76e58.png)
+
+
+
+4. I used seven consecutive bundles of these data as an input.
+
+> An example of an input
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130181414-f2524567-992d-40cb-aa84-0d78b4fc378e.png)
+
+
+
+### 1.4 Target
+
+
+1. I then set the average daily number of confirmed coronavirus cases for the next week as the target of the input data.
+
+
+> An example of a target
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130182552-1fa00931-9903-4bd2-b092-f80a8228f814.png)
+
+
+
+
+
+
+# 2. Algorithm
+
+
+### 2.0 Prediction and Forecasting
+
+1. I mainly had two tasks. Prediction and Forecasting.
+
+2. For Forecasting I can use every AI models, but since I cannot use sequential AI model for Prediction tasks, the available models for it is very limited.
+
+### 2.1 Acessing the Data
+
+
+1. All of my data are saved in my [Google Drive](https://www.google.com/intl/ko_KR/drive/)
+
+2. I accessed to these data using Pandas' read_cvs method.
+
+
+> The code
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130183429-1a1a3e5f-7c29-412e-9358-a174628bb5ae.png)
+
+
+### 2.2 Splitting the Data
+
+1. If the task were prediction I shuffled the data when splitting it into training data and test data.
+
+2. If the task were forecasting I did not shuffled the data.
+
+3. 
