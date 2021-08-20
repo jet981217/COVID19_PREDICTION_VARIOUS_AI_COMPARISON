@@ -18,7 +18,7 @@
 
 
 
-### 1.1 The number of confirmed COVID_19 patients.
+### 1.1. The number of confirmed COVID_19 patients.
 
 1. This Data consists of the number of confirmed COVID_19 patients everyday in South Korea. 
 
@@ -34,7 +34,7 @@
 
 
 
-### 1.2 COVID_19 articles collected daily by [Naver](https://naver.com), a large Korean portal site.
+### 1.2. COVID_19 articles collected daily by [Naver](https://naver.com), a large Korean portal site.
 
 1. There are several factors affecting the number of new confirmed cases of COVID_19.
 
@@ -51,7 +51,7 @@
 
 
 
-### 1.3 Processed data
+### 1.3. Processed data
 
 
 
@@ -101,7 +101,7 @@
 
 
 
-### 1.4 Target
+### 1.4. Target
 
 
 1. I then set the average daily number of confirmed coronavirus cases for the next week as the target of the input data.
@@ -119,13 +119,13 @@
 # 2. Algorithm
 
 
-### 2.0 Prediction and Forecasting
+### 2.0. Prediction and Forecasting
 
 1. I mainly had two tasks. Prediction and Forecasting.
 
 2. For Forecasting I can use variety of AI models, but since I cannot use sequential AI model for Prediction tasks, the available models for it is very limited.
 
-### 2.1 Acessing the Data
+### 2.1. Acessing the Data
 
 
 1. All of my data are saved in my [Google Drive](https://www.google.com/intl/ko_KR/drive/)
@@ -138,7 +138,7 @@
 > ![image](https://user-images.githubusercontent.com/50206883/130183429-1a1a3e5f-7c29-412e-9358-a174628bb5ae.png)
 
 
-### 2.2 Splitting the Data
+### 2.2. Splitting the Data
 
 1. If the task were prediction I shuffled the data when splitting it into training data and test data.
 
@@ -150,12 +150,12 @@
 >
 > ![image](https://user-images.githubusercontent.com/50206883/130186053-f9233195-cbb4-450e-b830-dc7019a87dee.png)
 
-### 2.3 Pre-processing data
+### 2.3. Pre-processing data
 
-#### 2.3.1 Prediction task
+#### 2.3.1. Prediction task
 
 
-#### 2.3.2 Forecasting task
+#### 2.3.2. Forecasting task
 
 1. I used MaxAbsScaler as a scaler, which can reflect negative numbers very well, because there is a lot of negative data that is processed by crawl.
 
@@ -178,21 +178,61 @@
 > ![image](https://user-images.githubusercontent.com/50206883/130187386-09bf91a3-c8e9-40e6-bfe1-2b85c5bec0ed.png)
 
 
-### 2.4 Training variety of AI models
+### 2.4. Training variety of AI models
 
-#### 2.4.1 Prediction task
+#### 2.4.1. Prediction task
 
 
-#### 2.4.2 Forecasting task
+#### 2.4.2. Forecasting task
 
 
 1. I used 14 A.I.s for the Forecasting task and defined functions for building each model.
 
 2. I designed the function to be able to pass parameters to apply hyperparameters that I pass when I use Random Search CV.
 
->ANN with no hidden layers
+3. 14 A.I models I used are "ANN with 0 hidden layers", "ANN with 1 hidden layers", "DNN with 2 hidden layers", "DNN with 3 hidden layers", "Simple RNN", "LSTM", "GRU", "LSTM with one DENSE layers", "GRU with one DENSE layers", "1D CNN with LSTM", "1D CNN with GRU", "LSTM with LSTM", "GRU with GRU", "LSTM with GRU"
+
+
+4. They can be divided into six categories. ANNs, DNNs, Sequential Models, Sequential Model with Dense layers, 1D CNN with Sequential Models, Sequential with Sequential Models.
+
+> ANNs
 >
-> ![image](https://user-images.githubusercontent.com/50206883/130196385-a26959f1-e27a-414e-821b-bf82c44b2a9e.png)
-> ANN with one hidden layers
+> ANN with 0 hidden layers
+>> 
+>> I had the Random Search CV set each value of the first neuron count, Drop_val, optimizer val, l1 regulation and l2 regulation.
+>> 
+>> Then I added BatchNormalization, to normalize the batch.
+>>
+>> I compiled the model's loss as MSE(Mean Square Error)
+>>
+>> Every optimizer val is either rmsprop or adam
+>> 
+>> ![image](https://user-images.githubusercontent.com/50206883/130196385-a26959f1-e27a-414e-821b-bf82c44b2a9e.png)
+>>
+> ANN with 0 hidden layers  
+>>
+>> 
+>> 
+>>  ![image](https://user-images.githubusercontent.com/50206883/130221678-837470df-ffa9-40b6-ad8d-900fccc387bd.png)
+>
+>
+> 
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
 >
 >
