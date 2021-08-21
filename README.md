@@ -178,7 +178,7 @@
 > ![image](https://user-images.githubusercontent.com/50206883/130187386-09bf91a3-c8e9-40e6-bfe1-2b85c5bec0ed.png)
 
 
-### 2.4. Training variety of AI models
+### 2.4. Build function for variety of AI models
 
 #### 2.4.1. Prediction task
 
