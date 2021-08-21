@@ -308,5 +308,37 @@
 > Sequential models use TimeSeries Split as CV because the validation data must be newer than train data. Therefore, I set the CV to be delivered to parameters because I have to choose differently depending on the type of model.
 >
 > This function then returns the Random Search CV it created.
+>
+>![image](https://user-images.githubusercontent.com/50206883/130318819-b0676717-ef0d-47cf-b863-0efbed84504b.png)
 
-3. 
+3. Make_Paramter_Epochs function
+
+>
+> Among the optimal hyperparameter dictionary values found by Random Search CV, non-epoch data were stored in Parameter_list and epoch in epochs_val.
+>
+> Because HyperParameter's name is saved based on Model_Name_Short stored in Pipeline (for example, if Model_Name_Short is 'ANN' and epoch is saved, it is saved as ANN__epoch). I have defined the function that creates the epoch's name regarding Model_Name_Short.
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130318936-0b811df5-fd70-4265-b252-77feee36b320.png)
+
+4. Make_Epoch_Name function
+
+> This creates the epoch's name.
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130319242-e8db104a-7b45-43a5-bf75-0439b22f09fd.png)
+
+
+5. Draw_Plot function
+
+> This is the function that draws plot.
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130319269-9ccc4bcb-1218-46ba-891b-940ff79789ef.png)
+
+
+### 2.6. Parameter distribution for every models.
+
+#### 2.6.1. Prediction task
+
+
+#### 2.6.2. Forecasting task
+
+
