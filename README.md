@@ -295,3 +295,21 @@
 >
 > ![image](https://user-images.githubusercontent.com/50206883/130318412-4fd68a7c-a03d-455b-89ac-4343caf905ad.png)
 
+2. Start_Random_Search function
+
+> First, Keras Regressor was created with the build function that was delivered.
+>
+> I then made Pipeline to take MaxAbsScaler with train data except for Validation Data.
+>
+> I then ran RandomizedSearchCV with pipeline and a given parameter distribution.
+>
+> To create enough models, n_iter is set to 50.
+>
+> Sequential models use TimeSeries Split as CV because the validation data must be newer than train data. Therefore, I set the CV to be delivered to parameters because I have to choose differently depending on the type of model.
+>
+>
+>
+>
+>
+>
+>
