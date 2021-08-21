@@ -307,9 +307,6 @@
 >
 > Sequential models use TimeSeries Split as CV because the validation data must be newer than train data. Therefore, I set the CV to be delivered to parameters because I have to choose differently depending on the type of model.
 >
->
->
->
->
->
->
+> This function then returns the Random Search CV it created.
+
+3. 
