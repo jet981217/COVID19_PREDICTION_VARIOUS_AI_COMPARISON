@@ -293,8 +293,5 @@
 >
 > Then I created and trained a new model based on this Hyper Parameter, drew a plot, and returned validation RMSE and test RMSE, MAE.
 >
->
->
->
->
->
+> ![image](https://user-images.githubusercontent.com/50206883/130318412-4fd68a7c-a03d-455b-89ac-4343caf905ad.png)
+
