@@ -259,13 +259,13 @@
 >>
 >> I used 1D_CNN, which is good for analyzing patterns in Time series, in combination with Sequential Model.
 >>
->> 
+>> I had the Random Search CV set CNN's neuron count, Window size, activation, and MaxPooling values.
 >>
->
->
->
->
->
+>>I set the padding to same so that the size of the data transferred to the subsequent Sequential layer is the same as the initial size.
+>>
+>>![image](https://user-images.githubusercontent.com/50206883/130317050-43906a85-b779-4a90-bc8b-ae5562952724.png)
+>>
+> Sequential with Sequential Models
 >
 >
 >
