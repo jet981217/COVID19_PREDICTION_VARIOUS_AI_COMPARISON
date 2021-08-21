@@ -274,27 +274,15 @@
 >>
 >>![image](https://user-images.githubusercontent.com/50206883/130317336-03d09154-c9ec-4c04-80b4-80e456846505.png)
 >>![image](https://user-images.githubusercontent.com/50206883/130317357-2fe0f6f8-657c-40d2-a888-5e1fa7f83a23.png)
->
->
->
->
-> 
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
+
+### 2.5. Functions for Random Search CV
+
+#### 2.5.1. Prediction task
+
+
+#### 2.5.2. Forecasting task
+
+1.Call Function
+
+
+
