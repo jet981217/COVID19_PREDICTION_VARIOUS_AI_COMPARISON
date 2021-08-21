@@ -209,11 +209,73 @@
 >> 
 >> ![image](https://user-images.githubusercontent.com/50206883/130196385-a26959f1-e27a-414e-821b-bf82c44b2a9e.png)
 >>
-> ANN with 0 hidden layers  
+> ANN with 1 hidden layers  
+>>
+>> Basically, the mechanism for subsequent ANNs/DNNs is the same, except that the Dense layers are added one by one as the model becomes more complex, and the Hyperparameters of these layers are tuned independently by RandomSearchCV.
+>> 
+>> ![image](https://user-images.githubusercontent.com/50206883/130221678-837470df-ffa9-40b6-ad8d-900fccc387bd.png)
+>
+> DNNs
+>
+> DNN with 2 hidden layers  
+>>
+>> ![image](https://user-images.githubusercontent.com/50206883/130311727-16aca741-1a06-4232-a165-3590e06b6dc0.png)
+>
+> DNN with 3 hidden layers  
+>>
+>> ![image](https://user-images.githubusercontent.com/50206883/130311757-289230a6-2c7c-4648-b553-bccb87f5bbde.png)
+>>
+> Sequential Models
+> 
+> Simple RNN
+>>
+>>I created a Reshape layer that transforms Input data into a two-dimensional array because Sequential Models have to be two-dimensional.
+>>
+>> Unlike other Sequential Models, Simple RNN uses activation Hyper parameter rather than recurrent_activation Hyper parameter.
+>>
+>> The number of neurons, the l1 and l2 values of the recurrent_regularizer, activator, optimizer, current dropout, and dropout were all determined by the Random Search CV.
+>>
+>> ![image](https://user-images.githubusercontent.com/50206883/130312837-113f4313-dd1c-4052-af1f-f14fb008bc08.png)
+>>
+>> 
 >>
 >> 
 >> 
->>  ![image](https://user-images.githubusercontent.com/50206883/130221678-837470df-ffa9-40b6-ad8d-900fccc387bd.png)
+>>
+>>
+>>
+>>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> 
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
 >
 >
 > 
