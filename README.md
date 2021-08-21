@@ -237,11 +237,11 @@
 >>
 >> ![image](https://user-images.githubusercontent.com/50206883/130312837-113f4313-dd1c-4052-af1f-f14fb008bc08.png)
 >>
->> 
+> LSTM&GRU
 >>
+>> LSTM and GRU have the same basic mechanism as Simple RNN, except that they have recurrent_activation and that it is used instead of activation.
 >> 
->> 
->>
+>> ![image](https://user-images.githubusercontent.com/50206883/130314587-f1fe1ee1-5852-44f2-90f0-1069423ea7de.png)
 >>
 >>
 >>
