@@ -282,7 +282,19 @@
 
 #### 2.5.2. Forecasting task
 
-1.Call Function
 
+1. Call Function
 
-
+> I first ran the Start_Random_Search function that runs the Random Search CV to store the fitted Random Search CV in the grid variable.
+> 
+> Then I printed out the best Hyper Parameter found by Random Search CV and checked it.
+>
+> Then I called the Make_Parameter_Epochs function, which separates the Epoch from the rest of the optimal HyperParameters found by Random Search CV, and saved them separately.
+>
+> Then I created and trained a new model based on this Hyper Parameter, drew a plot, and returned validation RMSE and test RMSE, MAE.
+>
+>
+>
+>
+>
+>
