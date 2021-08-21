@@ -268,12 +268,12 @@
 > Sequential with Sequential Models
 >
 >
->
->
->
->
->
->
+>> LSTM with LSTM, GRU with GRU, LSTM with GRU
+>>
+>>This basically has two Sequential layers, but the difference is that the return_sequences of the first layer were set to True to deliver the data to the second layer in the same format.
+>>
+>>![image](https://user-images.githubusercontent.com/50206883/130317336-03d09154-c9ec-4c04-80b4-80e456846505.png)
+>>![image](https://user-images.githubusercontent.com/50206883/130317357-2fe0f6f8-657c-40d2-a888-5e1fa7f83a23.png)
 >
 >
 >
