@@ -243,24 +243,24 @@
 >> 
 >> ![image](https://user-images.githubusercontent.com/50206883/130314587-f1fe1ee1-5852-44f2-90f0-1069423ea7de.png)
 >>
+> Sequential Model with Dense layers
+>
+> LSTM&GRU with one DENSE layers
 >>
+>> This has a Dense layer attached to the LSTM/GRU model, which has the same structure as that used in ANN/DNN.
 >>
+>> In the same way as the models above, Hyper parameters on all layers are found independently by Random Search CV.
+>>
+>>![image](https://user-images.githubusercontent.com/50206883/130315442-d1ba2978-9d62-40a5-b4d2-1193a47f518b.png)
+>>
+> 1D CNN with Sequential Models
 >
->
->
->
->
->
->
->
->
->
->
->
->
-> 
->
->
+> 1D CNN with LSTM&GRU
+>>
+>> I used 1D_CNN, which is good for analyzing patterns in Time series, in combination with Sequential Model.
+>>
+>> 
+>>
 >
 >
 >
