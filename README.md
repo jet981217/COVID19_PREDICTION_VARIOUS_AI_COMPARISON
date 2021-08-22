@@ -396,24 +396,31 @@
 
 2. Sequential Models
 
+> The sequence length of Input data in Sequential Models is 7. Because it is very short, the model is likely to be overfit to the train data.
 >
+> I therefore came to the conclusion that it is optimal to set the range of the recurrent dropout and dropout, l1 l2 values of the Hyperparameter range as shown below through repeated Random Search CV experiments.
+>
+> Also, I decided to set TimeSeries Split to 4 because I thought it would be difficult to reflect the overall pattern if I split it too tightly.
 
+
+> Sequential Models
 >
+> Simple RNN
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130340268-23559a4d-6b11-4073-859a-dfada313a4f3.png)
 >
+> LSTM
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130340272-9347fa7f-74da-4dfc-b0a3-c250de75c35c.png)
 >
+> GRU
 >
->
->
->
->
->
->
->
->
->
->
+> ![image](https://user-images.githubusercontent.com/50206883/130340275-daf82f1d-1780-4764-9776-cfd518eceed4.png)
+
+
+3. Sequential Model with Dense layers
+
+
 >
 >
 >
