@@ -437,99 +437,42 @@
 
 4. 1D CNN with Sequential Models
 
+>
+> I set the Window size as a value of 2 or more and 5 or less because the Train Input has a sequence length of 7. The reason why Max Pooling is set to 1 or more and 3 or less is to decide whether to deliver the output or proceed with Max Pooling.
+>
+> Similarly, I set the activator to tanh and sigmoid to reflect negative values well on CNN.
+>
+
+
+> 1D CNN with Sequential Models
+>
+> 1D CNN with LSTM
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130340581-e5564b04-d56b-44da-8833-51e460ddeb06.png)
+> 
+> 1D CNN with GRU
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130340591-31056a5b-04cc-49d9-a1ef-382f3056cedb.png)
+
+5. Sequential with Sequential Models
 
 >
+> I basically created parameters that are stacked with two parameters distributions that make layers of the above Sequential Model.
 >
+
+
+> Sequential with Sequential Models
 >
+> LSTM with LSTM
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130340624-0f41b13e-c9a3-4770-81ea-fd3895c18696.png)
 >
+> GRU with GRU
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130340634-ce4e9378-0a09-496f-86dd-33c7dd53c560.png)
 >
+> LSTM with GRU 
 >
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
+>![image](https://user-images.githubusercontent.com/50206883/130340640-152a11b2-b55c-4a24-8d1b-cb7fb1b43d10.png)
+
+
