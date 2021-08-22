@@ -420,16 +420,24 @@
 
 3. Sequential Model with Dense layers
 
+> I made it basically a combination of the two parameters above.
+>
+> With the range set like this, I decided to observe which parameters would be optimal when the two layers were combined.
 
+> Sequential Model with Dense layers
 >
+> LSTM with dense layer
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130340340-404b6026-42cd-4df0-a333-0e2131976d19.png)
 >
+> GRU with dense layer
 >
->
->
->
->
->
+> ![image](https://user-images.githubusercontent.com/50206883/130340345-3bbfe6c1-95e9-44a4-8336-589c8d400a46.png)
+
+
+4. 1D CNN with Sequential Models
+
+
 >
 >
 >
