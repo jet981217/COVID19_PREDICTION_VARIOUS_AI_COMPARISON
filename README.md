@@ -367,8 +367,10 @@
 >
 
 > I set CV to 10 to have sufficiently number of Cross-Validation 
-
+>
 > I repeated the Random Search CV numerous times and found that the dropout values of the optimal parameters were small and the l1 and l2 values were very small, so I set the range as below.
+>
+>
 
 > ANN
 >
@@ -380,15 +382,22 @@
 >
 > ![image](https://user-images.githubusercontent.com/50206883/130339714-69c6d54f-086c-4b7a-bec3-d0be515b43b0.png)
 >
+
 > DNN
 >
 > DNN with Two hidden layers
 >
 > ![image](https://user-images.githubusercontent.com/50206883/130339726-47244ed6-ecf9-487b-8ba0-f3ede7dd1b15.png)
 >
+> DNN with Three hidden layers
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130339869-1333e3c8-3625-4e98-9700-49c8a0522463.png)
+
+
+2. Sequential Models
+
 >
->
+
 >
 >
 >
