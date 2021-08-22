@@ -341,4 +341,165 @@
 
 #### 2.6.2. Forecasting task
 
+1. Non-Sequential Models(ANNs and DNNs)
 
+> I set the range of epoch values from 250 to 400, based on a series of experiments with the same remaining conditions for Non - Sequential Models, which resulted in better performance with the epoch values from 250 to 400.
+
+
+> I made sure that the activator was selected between tanh and sigmoid, which can reflect the negative value of Input Data well when it increases.
+>
+> As shown in the image, sigmoid and tanh can reflect negative numbers well, while the latter two rarely can.
+>
+> (a) Sigmoid function; (b) Tanh function; (c) ReLU function; (d) Leaky ReLU function.
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130339004-cce06838-537f-4256-8ef0-e872b12a1b14.png)
+> 
+> Image from [here](https://www.researchgate.net/figure/Nonlinear-function-a-Sigmoid-function-b-Tanh-function-c-ReLU-function-d-Leaky_fig3_323617663)
+
+>
+> I set the activator to RMS Prop, which adjusts the learning rate appropriately by considering the slope and reduces the loss, and Adam, which reduces the loss by considering the direction of the step and the learning rate.
+>
+> According to the experiment ["A Complete Guide to Adam and RMSprop Optimizer"](https://medium.com/analytics-vidhya/a-complete-guide-to-adam-and-rmsprop-optimizer-75f4502d83be) comparing the performance and aspects of Adam and RMSprop, Adam and RMSprop are much more accurate and faster than other optimizers.
+>
+> ![image](https://user-images.githubusercontent.com/50206883/130339363-4a8c54ef-f899-42c9-8383-48bf492c0693.png)
+>
+> Image from [here](https://medium.com/analytics-vidhya/a-complete-guide-to-adam-and-rmsprop-optimizer-75f4502d83be)
+>
+
+> ANN
+> 
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
