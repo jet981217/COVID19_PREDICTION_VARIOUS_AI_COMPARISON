@@ -357,7 +357,7 @@
 > Image from [here](https://www.researchgate.net/figure/Nonlinear-function-a-Sigmoid-function-b-Tanh-function-c-ReLU-function-d-Leaky_fig3_323617663)
 
 >
-> I set the activator to RMS Prop, which adjusts the learning rate appropriately by considering the slope and reduces the loss, and Adam, which reduces the loss by considering the direction of the step and the learning rate.
+> I set the activator as RMS Prop, which adjusts the learning rate appropriately by considering the slope and reduces the loss, and Adam, which reduces the loss by considering the direction of the step and the learning rate.
 >
 > According to the experiment ["A Complete Guide to Adam and RMSprop Optimizer"](https://medium.com/analytics-vidhya/a-complete-guide-to-adam-and-rmsprop-optimizer-75f4502d83be) comparing the performance and aspects of Adam and RMSprop, Adam and RMSprop are much more accurate and faster than other optimizers.
 >
@@ -366,19 +366,25 @@
 > Image from [here](https://medium.com/analytics-vidhya/a-complete-guide-to-adam-and-rmsprop-optimizer-75f4502d83be)
 >
 
+> I set CV to 10 to have sufficiently number of Cross-Validation 
+
+> I repeated the Random Search CV numerous times and found that the dropout values of the optimal parameters were small and the l1 and l2 values were very small, so I set the range as below.
+
 > ANN
-> 
 >
+> ANN with Zero hidden layers.
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130339652-299c6683-19dd-41a6-950f-fe32439cc33e.png)
 >
+> ANN with One hidden layers. 
 >
+> ![image](https://user-images.githubusercontent.com/50206883/130339714-69c6d54f-086c-4b7a-bec3-d0be515b43b0.png)
 >
+> DNN
 >
+> DNN with Two hidden layers
 >
->
->
->
->
+> ![image](https://user-images.githubusercontent.com/50206883/130339726-47244ed6-ecf9-487b-8ba0-f3ede7dd1b15.png)
 >
 >
 >
